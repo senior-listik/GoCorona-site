@@ -1,0 +1,57 @@
+@import 'fonts'
+@import 'reset'
+@import 'variables'
+
+html,
+body
+    height: 100%
+    line-height: 1
+    font-size: 12px
+
+body
+    font-family: rubik
+    font-size: 1rem
+    color: $main_text_color
+
+.wrapper
+    overflow: hidden
+    display: flex
+    flex-direction: column
+    min-height: 100%
+
+.main
+    flex: 1 1 auto
+    
+[class*="__container"]
+    max-width: 1087px
+    margin: 0 auto
+    padding: 0 15px
+
+
+.block-text
+    &__title
+        font-size: 3.67rem
+        font-weight: 700
+        line-height: 126%
+        color: $black_text_color
+        span
+            color: $main_pink_color
+        &:not(:last-child)
+            margin: 0 0 12px 0
+    &__text 
+        max-width: 370px
+        line-height: 138.5%
+        letter-spacing: 0.96px
+        &:not(:last-child)
+            margin: 0 0 24px 0   
+            
+.block-text__title_blue span
+    color: $blue_text_color
+
+@import 'header'
+@import 'main_get-started'
+@import 'main_stay-safe'
+@import 'main_experts'
+@import 'main_healthcare'
+@import 'footer'
+@import 'media'

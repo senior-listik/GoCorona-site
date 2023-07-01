@@ -1,0 +1,74 @@
+.header
+    position: absolute
+    width: 100%
+    top: 0
+    left: 0
+    z-index: 50
+    &__container
+        display: flex
+        min-height: 114px
+        align-items: center
+
+    &__logo
+        display: flex
+        align-items: center
+        svg
+            width: 40px
+            height: 40px
+    &__logo-title 
+        color: $black_text_color
+        font-size: 1.5rem
+        font-weight: 700
+        span
+            color: $main_pink_color
+    &__menu
+        flex: 1 1 auto
+
+    &__button
+        flex: 0 0 252px
+        display: flex
+        justify-content: flex-end
+        align-items: center
+
+.menu
+    display: flex
+    justify-content: flex-end
+    &__list
+        display: flex
+        color: $black_text_color
+    &__item
+        margin: 0 40px 0 0
+    &__link
+        font-family: raleway
+        text-transform: uppercase
+        font-weight: 700
+        font-size: 0.83rem
+        line-height: 1.2
+        letter-spacing: 0.14em
+        color: $black_text_color
+
+.button
+    display: inline-block
+    font-family: raleway
+    font-weight: 800
+    font-size: 0.83rem
+    line-height: 1.2
+    letter-spacing: 0.14em
+    text-transform: uppercase
+    color: $white_text_color
+    padding: 14px 30px
+    border-radius: 5px
+    background: $red_btn_color
+    transition: background-color 0.3s ease 0s
+    &:hover
+        background: $red_btn_color_hover
+    
+.button_blue
+    background: $blue_btn_color
+    &:hover
+        background: $blue_btn_color_hover
+
+.icon-menu, .close-icon-menu
+    display: none
+    flex: 0 0 30px
+    height: 20px

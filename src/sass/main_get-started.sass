@@ -1,0 +1,56 @@
+.get-started 
+    background-color: $bg_first_color
+    
+    &__container 
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        position: relative
+        padding: 150px 15px 50px 15px
+    &__content
+        flex: 0 1 48% 
+        padding: 0 20px
+    &__block-text
+        max-width: 410px
+    &__video 
+        flex: 1 1 100%
+        padding: 60px 0 0 20px
+    &__image
+        flex: 0 1 52%
+        z-index: 2
+        img
+            max-width: 100%
+
+.get-started__container::before
+    content: ""
+    position: absolute
+    width: 100vw
+    height: 100%
+    top: 0
+    right: 267px
+    transform: translate(100%, 0px)
+    border-radius: 30px 0 0 30px
+    background-color: $main_pink_color
+
+.video-get-started
+    display: inline-flex
+    align-items: center
+    &__icon
+        flex: 0 0 44px
+        svg
+            height: 44px
+            width: 44px
+    &__body
+        padding: 0 0 0 12px 
+    &__title
+        font-size: 1.08rem
+        line-height: 126%
+        letter-spacing: 1.04px
+        color: $grey_text_color
+    &__text
+        color: $black_text_color
+        font-size: 0.9rem
+        line-height: 126%
+        letter-spacing: 1.485px
+        text-transform: uppercase
+

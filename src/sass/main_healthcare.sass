@@ -1,0 +1,81 @@
+.healthcare
+    background-color: $bg_second_color
+    padding: 80px 0 30px 0
+    &__block-text
+        margin: 0 0 45px 0
+    &__columns
+        padding: 0 36px
+        flex: 0 1 33.333%
+        position: relative
+        &::before, 
+        &::after
+            content: "" 
+            position: absolute
+            background-color: $main_pink_color
+            border-radius: 16px
+        &_1::before
+            width: 65px
+            height: 65px
+            bottom: -35px
+            left: 15px
+            transform: rotate(-30deg)
+        &_1::after
+            width: 97px
+            height: 97px
+            top: 40px
+            right: -10px
+            transform: rotate(105deg) 
+            border-radius: 30px
+        &_2::after
+            width: 127px
+            height: 127px
+            bottom: -27px
+            right: -40px
+            transform: rotate(-30deg) 
+            border-radius: 30px
+        &_3::before
+            width: 65px
+            height: 65px
+            top: -35px
+            right: 15px
+            transform: rotate(-30deg)
+    &__items
+        display: flex
+
+.item-healthcare
+    height: 100%
+    position: relative
+    z-index: 2
+    text-align: center
+    border-radius: 8px
+    background: $main_white_color
+    box-shadow: 0px 4px 18px 0px rgba(88, 126, 236, 0.18)
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 37px 18px
+    &__icon
+        margin: 0 0 58px 0
+        svg
+            max-width: 90px
+            height: 72px
+    &__title
+        color: $black_text_color
+        font-size: 1.33rem
+        font-weight: 700
+        line-height: 138.5%
+        letter-spacing: 1.28px
+        margin: 0 0 4px 0
+    &__text
+        line-height: 138.5%
+        letter-spacing: 0.96px
+
+.block-text_center
+    text-align: center
+.block-text__text_max-width
+    max-width: 620px
+    margin: 0 auto
+
+
+
+  

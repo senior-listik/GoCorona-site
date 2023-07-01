@@ -1,0 +1,20 @@
+header.header(id="open")
+    .header__container(id="close")
+        a.header__logo(href="#")
+            svg
+                use(xlink:href="@img/icons/icons.svg#logo")
+            .header__logo-title Go<span>Corona</span>
+        .header__menu(class="menu")
+            nav.menu__body(id="menu")
+                ul.menu__list
+                    each val in ['home', 'features', 'support', 'contact us']
+                        li.menu__item
+                            a.menu__link(href="#")= val
+        .header__button 
+            a.button(class="button_blue" href="#")  Download
+            a.icon-menu(href="#open")
+                span
+            a.close-icon-menu(href="#close")
+                span
+
+                
